@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Property Search Exercise</title>
+</head>
+<body>
+
+<h1>Property Search</h1>
+<br>
+<form action="https://request-inspector.glitch.me" method="POST">Type of property:
+    <select name="property_type">
+        <option value="comm">Commercial</option>
+        <option value="res">Residential</option>
+        <option value="foreclose">Foreclosure</option>
+        <option value="rent">Rental</option>
+    </select>
+    <br>
+    <p>
+        <label for="zip">Zipcode </label>
+        <input type="text" name="zip" id="zip">
+    </p>
+    <p>
+        <label for="min_sq">Minimum Square Feet </label>
+        <input type="text" name="min_sq" id="min_sq">
+    <br>
+        <label for="max_sq">Maximum Square Feet </label>
+        <input type="text" name="max_sq" id="max_sq">
+    </p>
+    <p>
+        <label for="min_price">Minimum Price Range </label>
+        <input type="text" name="min_price" id="min_price">
+    <br>
+        <label for="max_price">Maximum Price Range </label>
+        <input type="text" name="max_price" id="max_price">
+    </p>
+    <p>
+        <label for="bedrooms">Number of Bedrooms </label>
+        <input type="text" name="bedrooms" id="bedrooms">
+        <br>
+        <label for="bathrooms">Number of Bathrooms </label>
+        <input type="text" name="bathrooms" id="bathrooms">
+    </p>
+    <p>Amenities:
+        <br>
+        <br>
+        <label for="privacycheck">
+            Privacy Fence
+            <input type="checkbox" name="amenities" value="privacy_fence" id="privacycheck">
+        </label>
+        <label for="garagecheck">
+            Garage
+            <input type="checkbox" name="amenities" value="garage" id="garagecheck">
+        </label>
+        <label for="sprinklercheck">
+            In-ground Sprinkler System
+            <input type="checkbox" name="amenities" value="ig_sprinkler" id="sprinklercheck">
+        </label>
+        <label for="petcheck">
+            Pet Friendly
+            <input type="checkbox" name="amenities" value="pets" id="petcheck">
+        </label>
+    </p>
+    <button type="submit">Search Now</button>
+</form>
+
+</body>
+</html>
