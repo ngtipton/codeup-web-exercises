@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Register With Us.</title>
+</head>
+<body>
+
+    <form action="https://request-inspector.glitch.me" method="POST">
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" placeholder="Input your email address">
+    <br>
+        <label for="password">Password: </label>
+        <input id="password" name="password" type="password">
+    <br>
+    <br>
+        <label for="bio">Bio: </label>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder= "Give a short bio."></textarea>
+    <br>
+    <br>
+    <!--
+    <div>How did you hear about us?
+        <br>
+        <br>
+        <label for="billboardradio">
+            Billboard
+            <input type="radio" name="heard_of_us" value="billboard" id="billboardradio">
+        </label>
+        <label for="radioradio">
+            Radio Advertisement
+            <input type="radio" name="heard_of_us" value="radio" id="radioradio">
+        </label>
+        <label for="intradio">
+            Internet Advertisement
+            <input type="radio" name="heard_of_us" value="internet" id="intradio">
+        </label>
+        <label for="otherradio">
+            Other
+            <input type="radio" name="heard_of_us" value="other" id="otherradio">
+        </label>
+    </div>
+    --><!-- The above is the original exercise, but keeping it as comment for future reference -->
+
+    <div>How did you hear about us?
+        <br>
+        <br>
+        <label for="billboardcheck">
+            Billboard
+            <input type="checkbox" name="heard_of_us_multiple" value="billboard" id="billboardcheck">
+        </label>
+        <label for="radiocheck">
+            Radio Advertisement
+            <input type="checkbox" name="heard_of_us_multiple" value="radio" id="radiocheck">
+        </label>
+        <label for="intcheck">
+            Internet Advertisement
+            <input type="checkbox" name="heard_of_us_multiple" value="internet" id="intcheck">
+        </label>
+        <label for="othercheck">
+            Other
+            <input type="checkbox" name="heard_of_us_multiple" value="other" id="othercheck">
+        </label>
+    </div>
+    <br>
+    <button type="submit">Send</button>
+    </form>
+
+</body>
+</html>
