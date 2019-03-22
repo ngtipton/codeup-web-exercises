@@ -13,7 +13,7 @@ body, html {
 form {
     /* This form should be separated from other elements by 1em */
     /* There must be 1em between the content and the border of this element */
-    padding: 1em;
+    margin: 1em;
 }
 
 fieldset {
@@ -39,8 +39,8 @@ fieldset {
     /* This element must use 100% of the width */
     /* It should have a separation of .5em from elements on top of it and below it*/
     width: 100%;
-    padding-top: .5em;
-    padding-bottom: .5em;
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
 
 .form-label {
