@@ -49,16 +49,16 @@ a {
 .profile {
     background: var(--light-bg);
     height: 80px;
+    position: relative;
 }
 .profile-image {
     position: absolute;
-    top: 315px;
+    top: -33%;
 }
 .profile-form {
-    line-height: 50%;
     position: absolute;
-    top: 358px;
-    right: 0px;
+    right: 0%;
+    top: 22%;
 }
 .btn {
     border: 1px solid var(--main-link-color);
@@ -102,8 +102,8 @@ a {
 }
 .media {
     background-color: white;
-    border: 1px;
-    border-color: #848487;
+    border-bottom-style: solid;
+    border-color: #E6ECF0;
     padding: .5em;
     width: 100%;
     overflow: auto;
@@ -116,7 +116,6 @@ a {
 .media-body {
     float: left;
     width: calc(100% - 50px);
-    padding-bottom: 1em;
 }
 .container {
     margin-top: 2em;
