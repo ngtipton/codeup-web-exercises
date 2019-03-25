@@ -60,6 +60,13 @@ a {
     right: 0%;
     top: 22%;
 }
+.profile-items {
+    list-style: none;
+    padding: 0px;
+}
+.profile-entry {
+    margin: .5em;
+}
 .btn {
     border: 1px solid var(--main-link-color);
     color: var(--main-link-color);
