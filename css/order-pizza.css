@@ -1,0 +1,19 @@
+.display-4 {
+    text-align: center;
+    background-color: white;
+    opacity: 0.6;
+}
+
+.jumbotron {
+    background-image: url("pizza.png");
+}
+.btn-primary {
+    float: right;
+}
+
+.form-group {
+    margin: 0 auto;
+}
+.card-header {
+    background-color: green;
+}
