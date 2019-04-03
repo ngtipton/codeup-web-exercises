@@ -1,11 +1,10 @@
 "use strict";
 
-console.log('Hello from JavaScript!');
-
-console.log("Before alert...");
-var color = "";
+console.log('Hello from External JavaScript!');
 
 alert("Welcome to my website!");
+
+var color = "";
 
 while (color === "") {
     color = prompt("Hi, what is your favorite color?");
@@ -74,3 +73,19 @@ while (facebookhours === "") {
 }
 
 alert("You made $" + ((Number(googlepay) * Number(googlehours)) + (Number(amazonpay) * Number(amazonhours)) + (Number(facebookpay) * Number(facebookhours))) + " this week in pay.");
+
+//+ can replace Number()
+//var classSize = confirm("Is the class currently full?);
+//var classSchedule = confirm("Does the class conflict with your schedule?"
+//var enrollmentStatus = !classSize && !classSchedule;
+
+//alert("Student enrollment status: " + enrollmentStatus);
+
+//Way Sophia did it.
+
+var numberOfItems = prompt("How many items did you buy>");
+var offerExpiration = confirm("Is the offer valid?");
+var membership = confirm("Are you a premium member?");
+
+var couponStatus = (membership || Number(numberOfItems) > 2) && offerExpiration;
+alert(couponStatus);
