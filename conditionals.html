@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conditionals</title>
+</head>
+<body>
+
+    <script src="js/conditionals.js"></script>
+
+    <!--
+
+    Note: Ignore this, I was just taking notes in class and didn't know this would actually be the exercise name.
+
+    var num = 1;
+
+    if (1 == num) {
+        console.log ("it is 1");
+    }
+
+        This makes it console log "it is 1" if the number 1 equals the variable num, which was defined as 1.
+
+    if (1 !== num) {
+        console.log ("it is not 1");
+    }
+
+        This makes the console log write a different statement if 1 is not equal to the variable num.  A good example of
+        this is when the num variable was changed to something else (like 2).
+
+        if checks for true statements, else checks for false statements.
+
+    var color = '';
+
+    if (color == 'green') {
+        console.log('go');
+    }
+
+    if (color == 'yellow') {
+        console.log('slow');
+    }
+
+    if (color == 'red') {
+        console.log('stop');
+    }
+
+        Once you define the color variable, then the if functions below it will determine which one it is and gives you
+        the console log that corresponds to the specified color.
+
+    if (color == 'green') {
+        console.log('go');
+    } else if (color == 'yellow') {
+        console.log('slow');
+    } else if (color == 'red') {
+        console.log('stop');
+    } else {
+        console.log('blink');
+    }
+
+        This is a better way of writing the code, because it shows all the functions have to something to do with one
+        specific thing.  Makes it more readable and understandable.
+
+        Only use else for black and white functions.  It there are more than three options, use else if.
+
+        For else statements, you don't put anything after it.
+
+    if (color == 'green') {
+        console.log('go');
+    } else if (color == 'yellow') {
+        console.log('slow');
+    } else {
+        console.log('stop');
+    }
+
+        This use of else means that any color other than green or yellow will send out a console log that says "stop".
+
+    if (showered) {
+        console.log ('you smell good');
+    }   else {
+        console.log ('you smell funny');
+    }
+
+        The above is a black and white statement/function.
+
+    var smell = (showered === true) ? "good" : "funny";
+
+    console.log("You smell " + smell);
+
+        This is a shortened version of the black and white statement/function above.  If showered variable is is true,
+        then the left statement ("good") will be used.  If the showered variable is false, then the right statement
+        ("funny") will be used.  The console log have the "You smell " already in it to add the smell variable and make
+        the sentence complete.
+
+    var showered = false;
+    var soapUsed = false;
+
+    if (showered) {
+        if (soapUsed === true){
+            console.log ('you smell good');
+        }
+    }   else {
+        console.log ('you smell funny');
+    }
+
+        This if within an if checks another variable on top of the original variable to determine if the statement is
+        true.
+
+    color = prompt("Give me a color");
+
+    switch (color) {
+        case "green":
+            console.log('go');
+            break;
+        case "yellow":
+            console.log('slow');
+            break;
+        case "red":
+            console.log('stop');
+            break;
+        default:
+            console.log('blink');
+    }
+
+        This is a switch statement that does the same thing as our if else language above.  The teacher said it is
+        preferable to use switch for 3 and above choices.
+
+    switch (color.toLowerCase()) {}
+
+        The .toLowerCase() will convert whatever is input into lower case letters and then submits it.
+    -->
+
+
+</body>
+</html>
