@@ -18,7 +18,7 @@
 
 var pickNumber = confirm("Would you like to enter a number?");
 
-//    console.log(pickNumber);   Look at recursion!!!!
+//  Look at recursion!!!!
 
     if (pickNumber == true){
         var number = prompt("Type in a number.");
@@ -48,10 +48,6 @@ var pickNumber = confirm("Would you like to enter a number?");
     }
 
     console.log(isPositive());
-
-//    function isOdd(numberToTest) {
-//        (pickNumber % 2 === 1) ? console.log("Number was even") : console.log("Number was odd");
-//    }
 
 
 /* ########################################################################## */
