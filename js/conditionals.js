@@ -16,11 +16,13 @@
  * Can you refactor your code to use functions?
  */
 
+//  This is my answer:
+
 var pickNumber = confirm("Would you like to enter a number?");
 
 //  Look at recursion!!!!
 
-    if (pickNumber == true){
+    if (pickNumber === true){
         var number = prompt("Type in a number.");
             if (isNaN(number)){
                 number = prompt("Give me a real number");
@@ -29,8 +31,8 @@ var pickNumber = confirm("Would you like to enter a number?");
         alert("You didn't enter anything.");
     }
 
-    function isEven(value) {
-        if (number%2 == 0)
+    function isEven(number) {
+        if (number %2 === 0)
             return alert("Is even");
         else
             return alert("Is odd.");
@@ -42,13 +44,26 @@ var pickNumber = confirm("Would you like to enter a number?");
 
     function isPositive(value) {
         if (number < 0)
-            return alert("Is negative");
-        else
-            return alert("Is positive.");
+             return alert("Is negative");
+         else
+             return alert("Is positive.");
     }
 
     console.log(isPositive());
 
+//  This is part of David's answer:
+
+//    if (number % 2 === 0) {
+//        alert("This is an even number");
+//    } else {
+//        alert("This is an odd number");
+//    }
+//    alert("This number plus 100 is " + (number +100) + "!");
+//    if (number >=0) {
+//        alert("This number is positive!");
+//    } else {
+//        alert("This number is negative!")
+//    }
 
 /* ########################################################################## */
 
@@ -69,6 +84,8 @@ var pickNumber = confirm("Would you like to enter a number?");
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
+
+//  My answer:
 
 //var analyzeColor = prompt("Type a color.")
 
@@ -95,6 +112,8 @@ var pickNumber = confirm("Would you like to enter a number?");
  * You should see a different message everytime you refresh the page
  */
 
+//  My answer:
+
 //    if (randomColor.toLowerCase() == "red") {
 //        console.log ("Red");
 //    } else if (randomColor.toLowerCase() == "orange") {
@@ -115,6 +134,8 @@ var pickNumber = confirm("Would you like to enter a number?");
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
+
+//  My answer:
 
 //    switch (randomColor.toLowerCase()) {
 //        case "red":
@@ -140,6 +161,8 @@ var pickNumber = confirm("Would you like to enter a number?");
 //            break;
 //    }
 
+//  Does the last value have to be default or case?
+
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
@@ -147,11 +170,18 @@ var pickNumber = confirm("Would you like to enter a number?");
  * function to show it to the user.
  */
 
+//  My answer:
 //var analyzeColor = prompt("Type a color.");
 //
 //if (analyzeColor) {
 //        alert(analyzeColor);
 //}
+
+
+//  Example used in class (partial):
+//var colorPromopt = prompt("Give me a color!");
+//var userInput = analyseColorSwitch(colorPromopt);
+
 
 /* ########################################################################## */
 
