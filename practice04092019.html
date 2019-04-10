@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    var url = [{ param: 'firstName', value: 'Bob'},
+        {param: 'lastName', value: 'Balaban'},
+        {param: 'zipCode', value: '78232'}];
+
+    var urlString = url.map(urls => `${urls.param}=${urls.value}`)
+    .join('&');
+
+    console.log(urlString);
+
+
+
+</script>
+
+</body>
+</html>
+
+<!--Strings!  Doing interesting stuff with them
+
+ var cars = 'mazda,hyundai,ford';
+ var carsArray = cars.split(',');
+ console.log(carsArray);
+
+ var cars = 'mazda, hyundai, ford';
+ var carsArray = cars.split(', ');
+ console.log(carsArray);
+
+ var cars = 'mazda,    hyundai, ford,bmw';
+ var carsArray = cars.split(/,\s*/);
+ console.log(carsArray);
+
+ Practice: Make a function to split an IP address into its constituent numbers.
+ Example IP address:
+ 192.168.0.25
+ Example result:
+ [192, 168, 0, 25]
+
+ var cars = 'mazda, hyundai, ford';
+ var carsArray = cars.split(', ');
+ var firstLetters = carsArray.map(car => car.charAt(0))
+ console.log(firstLetters);
+
+ var cars = 'mazda, hyundai, ford';
+ var carsArray = cars.split(', ');
+ carsArray.forEach(car => {
+   console.log(`The dealership has a ${car}.`)
+ })
+
+ Practice: Make a function to validate an IP address.  Split the IP address into an array of its constituent numbers, and check that 1. there are only four numbers and 2. each number is between 0-255.
+ Example IP address:
+ 192.168.0.25
+
+ var cars = 'mazda:3, hyundai:sonata, ford:focus';
+ var carsArray = cars.split(', ');
+ console.log(carsArray);
+
+ carsArray = carsArray.map(car => {
+   var brandAndModel = car.split(':')
+   return {
+     brand: brandAndModel[0],
+     model: brandAndModel[1]
+   }
+ });
+
+ console.log(carsArray);
+
+ Practice: Write a function to split the parameters in a URL query string.
+ Example query string:
+ firstName=Bob&lastName=Balaban&zipCode=78232
+ Example result:
+ [{ param: 'firstName', value: 'Bob'}, {...}, {...}]
+
+ var cars = ['mazda', 'hyundai', 'ford'];
+ var carsString = cars.join(', ');
+ console.log(carsString);
+
+ var cars = ['mazda', 'hyundai', 'ford'];
+ var carsString = cars.join(' and ');
+ console.log(carsString);
+
+ var cars = ['mazda', 'hyundai', 'ford'];
+ var carsString = cars.join(' is better than ');
+ console.log(carsString);
+
+ Practice: Take an array of four numbers and join them into an IP address.
+ Example input:
+ [192, 168, 0, 25]
+ Example result:
+ 192.168.0.25
+
+ var cars = [{ brand: 'mazda', model: '3' },
+ { brand: 'hyundai', model: 'sonata' },
+ { brand: 'ford', model: 'focus' }];
+
+ var carsString = cars.map(car => `${car.brand}:${car.model}`)
+ .join(', ');
+
+ console.log(carsString);
+
+ Practice: Make a function to create a URL query string out of an array of param objects.
+ Example input:
+ [{ param: 'firstName', value: 'Bob'}, {...}, {...}]
+ Example result:
+ firstName=Bob&lastName=Balaban&zipCode=78232
+-->
