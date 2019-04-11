@@ -23,7 +23,10 @@
      * accessing each element's index.
      */
 
-    console.log(names);
+    console.log(names[0]);
+    console.log(names[1]);
+    console.log(names[2]);
+    console.log(names[3]);
 
     /**
      * TODO:
@@ -40,9 +43,9 @@
      * Refactor your above code to use a `forEach` loop
      */
 
-    names.forEach(function(element, index, array) {
-        console.log(element, index, array);
-    })
+    names.forEach(function(element) {
+        console.log(element);
+    });
 
 
     /**
@@ -61,22 +64,22 @@
 
     var returnVal = ['1', '2', '3', '4', '5'];
 
-    function returnOne(num1) {
+    function returnOne() {
         return (returnVal[0]);
     }
 
-    console.log(returnOne())
+    console.log(returnOne());
 
-    function returnTwo(num2) {
+    function returnTwo() {
         return (returnVal[1]);
     }
 
-    console.log(returnTwo())
+    console.log(returnTwo());
 
-    function returnThree(num3) {
+    function returnThree() {
         return (returnVal[4]);
     }
 
-    console.log(returnThree())
+    console.log(returnThree());
 
 })();
