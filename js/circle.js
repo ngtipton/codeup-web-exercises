@@ -1,5 +1,5 @@
 //  Note:  What is this god-awful jumble of text that make almost no sense readability wise?
-
+//
 var myRadius = parseFloat(prompt("Enter the radius of your circle:", 0));
 MyArea(myRadius);
 
@@ -13,11 +13,29 @@ function roundArea(area) {
 
 function MyArea() {
     var area = calculateArea(myRadius);
-    console.log("A circle with a radius of " + myRadius + " has an area of " + area + ".  The area rounded to the nearest number is " + roundArea(area));
+    console.log("A circle with a radius of " + myRadius + " has an area of " + area + ".  The area rounded to the nearest number is " + roundArea(area) + ".");
 }
 
+//  Note: Trying to convert the above exercise into a square/rectangle equation.
 
-
+//var myLength = parseFloat(prompt("Enter the length of your square/rectangle:", 0));
+//var myWidth = parseFloat(prompt("Enter the width of your square/rectangle:", 0));
+//var myHeight = parseFloat(prompt("Enter the height of your square/rectangle:", 0));
+//MyAreaSR();
+//
+//function calculateArea(myArea) {
+//    return (myLength * myWidth * myHeight);
+//}
+//
+//function roundArea(area) {
+//    return Math.round(+area);
+//}
+//
+//function MyAreaSR() {
+//    var area = calculateArea(myArea);
+//    console.log("A circle with a radius of " + myRadius + " has an area of " + area + ".  The area rounded to the nearest number is " + roundArea(area));
+//}
+//
 
 
 //(function() {
