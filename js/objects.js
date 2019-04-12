@@ -153,19 +153,19 @@
 
         console.log("Book 2");
         console.log("Title: " + books[1].title);
-        console.log("Author: " + books[1].names.firstName + " " + books[0].names.lastName);
+        console.log("Author: " + books[1].names.firstName + " " + books[1].names.lastName);
 
         console.log("Book 3");
         console.log("Title: " + books[2].title);
-        console.log("Author: " + books[2].names.firstName + " " + books[0].names.lastName);
+        console.log("Author: " + books[2].names.firstName + " " + books[2].names.lastName);
 
         console.log("Book 4");
         console.log("Title: " + books[3].title);
-        console.log("Author: " + books[3].names.firstName + " " + books[0].names.lastName);
+        console.log("Author: " + books[3].names.firstName + " " + books[3].names.lastName);
 
         console.log("Book 5");
         console.log("Title: " + books[4].title);
-        console.log("Author: " + books[4].names.firstName + " " + books[0].names.lastName);
+        console.log("Author: " + books[4].names.firstName + " " + books[4].names.lastName);
 
         /**
          * Bonus:
