@@ -66,8 +66,8 @@
         geocode(restaurant, mapboxKey).then(function(result) {
             console.log(result);
             map.setCenter(result);
-            map.setZoom(12.5);
-            map.panTo([-98.640103, 29.544473]);
+            map.setZoom(13);
+            map.panTo([-98.640918, 29.551501]);
 
             var marker = new mapboxgl.Marker()
                 .setLngLat(map.getCenter(result))
