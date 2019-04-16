@@ -67,6 +67,7 @@
             console.log(result);
             map.setCenter(result);
             map.setZoom(12.5);
+            map.panTo([-98.640103, 29.544473]);
 
             var marker = new mapboxgl.Marker()
                 .setLngLat(map.getCenter(result))
@@ -76,8 +77,7 @@
                 popup.setText(restaurantInfo);
                 marker.setPopup(popup);
         });
-    })
-
+    });
 
 
 
