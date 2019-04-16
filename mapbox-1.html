@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+
+    <style>
+        body {
+            margin: 0px;
+        }
+        h1 {
+            text-align: center;
+        }
+        #map {
+            width: 1200px;
+            height: 80vh;
+            margin: 0 auto;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1>Mapbox API</h1>
+
+<div id="map"></div>
+
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+<script src="js/keys.js"></script>
+<script>
+    mapboxgl.accessToken = mapboxKey;
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        zoom: 13,
+        center: [-85.045878, 30.442212]
+    });
+
+//  My Way
+
+    var zoomOutTimer = 5;
+    var max = 1;
+    var interval = 1000; // interval time in milliseconds
+
+    var intervalId = setInterval(function () {
+        if (zoomOutTimer == max) {
+            map.setZoom(4);
+            map.setCenter([-98.171722, 38.983475]);
+            map.setStyle("mapbox://styles/mapbox/satellite-v9");
+        } else {
+            zoomOutTimer--;
+        }
+    }, interval);
+
+//  Teacher's example
+
+//    setTimeout(function () {
+//        map.setZoom(4);
+//        map.setCenter([-98.171722, 38.983475]);
+//        map.setStyle("mapbox://styles/mapbox/satellite-v9");
+//    }, 5000);
+
+
+
+
+</script>
+
+</body>
+</html>

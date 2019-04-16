@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+
+    <style>
+        body {
+            margin: 0px;
+        }
+        h1 {
+            text-align: center;
+        }
+        #map {
+            width: 1200px;
+            height: 80vh;
+            margin: 0 auto;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1>Mapbox API</h1>
+
+<div id="map"></div>
+
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+<script src="js/keys.js"></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+<script>
+
+    mapboxgl.accessToken = mapboxKey;
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v10',
+        zoom: 12,
+        center: [-98.488516, 29.410243]
+    });
+
+    var restuarants = [
+        {
+            name: "Sea Island Shrimp House",
+            address: "11715 Bandera Rd, San Antonio, TX 78250",
+            info: "Good fish and shrimp platter."
+        },
+        {
+            name: "Golden Corral Buffet & Grill",
+            address: "9111 N Loop 1604 W, San Antonio, TX 78249",
+            info: "Has all you can eat shrimp on Fridays."
+        },
+        {
+            name: "China Bistro",
+            address: "6387 Babcock Rd #1a, San Antonio, TX 78240",
+            info: "The shrimp lo mein is pretty good."
+        }
+    ];
+
+    restuarants.forEach(function(favRest) {
+        var restaurant = favRest.address;
+        var restaurantInfo = favRest.name + ": " + favRest.info;
+
+        geocode(restaurant, mapboxKey).then(function(result) {
+            console.log(result);
+            map.setCenter(result);
+            map.setZoom(12.5);
+
+            var marker = new mapboxgl.Marker()
+                .setLngLat(map.getCenter(result))
+                .addTo(map);
+
+            var popup = new mapboxgl.Popup()
+                popup.setText(restaurantInfo);
+                marker.setPopup(popup);
+        });
+    })
+
+
+
+
+
+
+//   geocode("11715 Bandera Rd, San Antonio, TX 78250", mapboxKey).then(function (result) {
+//       map.setCenter(result);
+//       map.setZoom(20);
+//       console.log(result);
+//   });
+
+//   var marker = new mapboxgl.Marker()
+//       .setLngLat([-98.665578, 29.550893])
+//       .addTo(map);
+
+//   var Popup = new mapboxgl.Popup()
+//       .setHTML("<p>Sea Island Shrimp House</p>");
+
+//   marker.setPopup(Popup);
+
+
+
+</script>
+
+</body>
+</html>
