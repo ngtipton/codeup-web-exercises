@@ -2,9 +2,122 @@
     padding: 0;
     margin: auto;
     display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
+    position: fixed;
+    top: 5%;
     left: 0;
     right: 0;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+#canvas2 {
+    padding: 0;
+    margin: auto;
+    display: block;
+    position: fixed;
+    top: 37%;
+    left: 0;
+    right: 0;
+}
+
+.border1 {
+    margin: auto;
+    width: 25px;
+    height: 450px;
+    background: linear-gradient(0.25turn, #333, #b5a642, #333);
+    text-align: center;
+    position: fixed;
+    bottom: 18%;
+    left: 43.1%;
+    padding: 0;
+}
+
+.border2 {
+    margin: auto;
+    width: 25px;
+    height: 450px;
+    background: linear-gradient(0.25turn, #333, #b5a642, #333);
+    text-align: center;
+    position: fixed;
+    bottom: 18%;
+    right: 43.1%;
+    padding: 0;
+}
+
+.border3 {
+    margin: auto;
+    width: 252px;
+    height: 25px;
+    background: linear-gradient(0.25turn, #333, #b5a642, #333);
+    text-align: center;
+    position: fixed;
+    bottom: 18%;
+    right: 44.2%;
+    padding: 0;
+}
+.border4 {
+    margin: auto;
+    width: 252px;
+    height: 25px;
+    background: linear-gradient(0.25turn, #333, #b5a642, #333);
+    text-align: center;
+    position: fixed;
+    bottom: 52.5%;
+    right: 44.2%;
+    padding: 0;
+}
+
+.glass {
+    margin: auto;
+    width: 250px;
+    height: 400px;
+    background-color: #3B94D9;
+    text-align: center;
+    position: fixed;
+    bottom: 20%;
+    left: 0%;
+    right: 0%;
+    padding: 0;
+    z-index: 1;
+    opacity: .5;
+}
+
+.base {
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    bottom: 25%;
+    left: 0%;
+    right: 0%;
+    padding: 0 0 30px;
+}
+
+.thread {
+    display: inline-block;
+    width: 10px;
+    height: 250px;
+    background: #b5a642;
+    border-radius: 5px;
+    position: relative;
+    transform-origin: 50% 0;
+    animation: moveIt 2s ease-in-out infinite;
+}
+
+.pendulum {
+    width: 75px;
+    height: 75px;
+    background: radial-gradient(circle at 50% 50%, #b5a642, #b5a642 30%, #b5a642 50%);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -39px;
+    left: -33px;
+}
+
+@keyframes moveIt {
+    0%, 100% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
 }

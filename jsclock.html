@@ -9,7 +9,7 @@
 
 <body>
 
-<canvas id="canvas" width="400" height="400" style="background-color:#333"></canvas>
+<canvas id="canvas" width="400" height="400" style="background-color:#420d09"></canvas>
 
 <script>
     var canvas = document.getElementById("canvas");
@@ -40,11 +40,16 @@
 
         grad = ctx.createRadialGradient(0, 0 ,radius * 0.95, 0, 0, radius * 1.05);
         grad.addColorStop(0, '#333');
-        grad.addColorStop(0.5, 'white');
+        grad.addColorStop(0.5, '#b5a642');
         grad.addColorStop(1, '#333');
         ctx.strokeStyle = grad;
         ctx.lineWidth = radius*0.1;
         ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(0, 0, radius * 0.7, 0, 2 * Math.PI);
+        ctx.fillStyle = '#d0d2d1';
+        ctx.fill();
 
         ctx.beginPath();
         ctx.arc(0, 0, radius * 0.1, 0, 2 * Math.PI);
@@ -109,6 +114,21 @@
         ctx.rotate(-pos);
     }
 </script>
+
+<canvas id="canvas2" width="400" height="600" style="background-color:#420d09"></canvas>
+
+<div class="glass"></div>
+
+<div class="border1"></div>
+<div class="border2"></div>
+<div class="border3"></div>
+<div class="border4"></div>
+
+<div class="base">
+    <div class="thread">
+        <div class="pendulum"></div>
+    </div>
+</div>
 
 </body>
 </html>
