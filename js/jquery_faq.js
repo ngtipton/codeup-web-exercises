@@ -41,4 +41,4 @@ $('.bigbend').click(function() {
     $('.bigbends').slideToggle(2500);
 });
 
-$('h2').fadeIn(8000);
+$('h2').delay(8000).fadeIn();
