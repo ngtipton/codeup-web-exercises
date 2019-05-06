@@ -7,7 +7,7 @@ var lng = -98.4951;
 
 $.ajax(corsUrl + darkSkyUrl + darkskyAPI + "/" + lat + "," + lng).done(function (data) {
     $('.today').append(
-        "<h5 class='mb-3 text-center'>" + data.daily.data[0].temperatureHigh + "°F" + " / " + data.daily.data[0].temperatureLow + "°F" + "</h5>",
+        "<h4 class='mb-3 text-center'>" + data.daily.data[0].temperatureHigh + "°F" + " / " + data.daily.data[0].temperatureLow + "°F" + "</h4>",
         "<p class='mb-3 text-center'> " + data.daily.data[0].icon + "</p>",
         "<p class='mb-3 text-center'> " + data.daily.data[0].summary + "</p>",
         "<p class='mb-3 text-center'> Humidity: " + data.daily.data[0].humidity + "</p>",
@@ -15,7 +15,7 @@ $.ajax(corsUrl + darkSkyUrl + darkskyAPI + "/" + lat + "," + lng).done(function 
         "<p class='mb-3 text-center'> UV Index: " + data.daily.data[0].uvIndex + "</p>"
     );
     $('.tomorrow').append(
-        "<h5 class='mb-3 text-center'>" + data.daily.data[1].temperatureHigh + "°F" + " / " + data.daily.data[1].temperatureLow + "°F" + "</h5>",
+        "<h4 class='mb-3 text-center'>" + data.daily.data[1].temperatureHigh + "°F" + " / " + data.daily.data[1].temperatureLow + "°F" + "</h4>",
         "<p class='mb-3 text-center'> " + data.daily.data[1].icon + "</p>",
         "<p class='mb-3 text-center'> " + data.daily.data[1].summary + "</p>",
         "<p class='mb-3 text-center'> Humidity: " + data.daily.data[1].humidity + "</p>",
@@ -23,7 +23,7 @@ $.ajax(corsUrl + darkSkyUrl + darkskyAPI + "/" + lat + "," + lng).done(function 
         "<p class='mb-3 text-center'> UV Index: " + data.daily.data[1].uvIndex + "</p>"
     );
     $('.day-after').append(
-        "<h5 class='mb-3 text-center'>" + data.daily.data[2].temperatureHigh + "°F" + " / " + data.daily.data[2].temperatureLow + "°F" + "</h5>",
+        "<h4 class='mb-3 text-center'>" + data.daily.data[2].temperatureHigh + "°F" + " / " + data.daily.data[2].temperatureLow + "°F" + "</h4>",
         "<p class='mb-3 text-center'> " + data.daily.data[2].icon + "</p>",
         "<p class='mb-3 text-center'> " + data.daily.data[2].summary + "</p>",
         "<p class='mb-3 text-center'> Humidity: " + data.daily.data[2].humidity + "</p>",
