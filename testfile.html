@@ -2,56 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dark Sky API Example</title>
+    <title>JS Testing File</title>
 </head>
 <body>
 
-<h1>Dark Sky API Example</h1>
+<h1>JS Testing File</h1>
 
-
-<script
-        src="https://code.jquery.com/jquery-2.2.4.min.js"
-        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-        crossorigin="anonymous"></script>
+<script src="js/promises.js"></script>
 <script src="js/keys.js"></script>
-<script>
-    "use strict";
-
-    mapboxgl.accessToken = mapboxKey;
-    map = {
-
-    var map = new mapboxgl.Map({
-        container: 'map',
-        style: "mapbox://styles/mapbox/navigation-preview-day-v2",
-        zoom: 10,
-        center: [-98.4951, 29.4246]
-    });
-
-    const timeSlices = ts.seriesInfo.radar.series;
-    const timeSlice = timeSlices[timeSlices.length - 1].ts;
-    const twcUrl = 'https://api.weather.com/v3/TileServer/tile/radar?ts=' + timeSlice +
-        '&xyz={x}:{y}:{z}&apiKey=3f8ed76d96d94f1f8ed76d96d98f1fc0';
-
-    map.on("load", function() {
-        map.addSource('twcRadar', {
-            type: 'raster',
-            tiles: [twcUrl],
-            tileSize: 256
-        });
-        map.addLayer({
-            'id': 'radar',
-            'type': 'raster',
-            'source': 'twcRadar',
-            'layout': {
-                'visibility': 'visible'
-            }
-        }, 'aeroway-taxiway');
-    });
-
-    invalidation.then(() => map.remove());
-    }
-
-</script>
 
 </body>
 </html>

@@ -50,6 +50,7 @@ const sumYears = users.reduce((accumulation, currentNumber) => {
     return accumulation + currentNumber.yearsOfExperience}, 0);
 
 console.log(sumYears);
+console.log(sumYears/users.length);
 
 const longestEmail = users.reduce((largestEmail, currentNumber) => {
     if(largestEmail.length < currentNumber.email.length){
@@ -61,9 +62,8 @@ return largestEmail;
 console.log(longestEmail);
 
 const instrNames = users.reduce((instructors, user) => {
-    instructors += ` ${user.name},`;
-return instructors
-}, 'Your Instructors are: ');
+    return instructors + user.name + ", ";
+    }, 'Your Instructors are: ');
 
 console.log(instrNames);
 
